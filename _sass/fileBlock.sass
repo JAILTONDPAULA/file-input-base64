@@ -1,21 +1,33 @@
 .fileBlock
-    >label
-        border: 1px solid #00000020
-        border-radius: 0.2rem
-        padding: 0.5rem
-        cursor: pointer
-        font-weight: 6000
-        font-family: Arial, Helvetica, sans-serif
-        font-size: 0.7rem
-        >*
-            vertical-align: middle
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+.buttonUploadFile
+    border: 1px solid #00000020
+    border-radius: 0.2rem
+    cursor: pointer
+    font-weight: 600
+    font-family: Arial, Helvetica, sans-serif
+    font-size: 0.7rem
+    padding: 0 0.5rem
+    >*
+        vertical-align: middle
+.mensageInput
+    flex-basis: 67%
+    font-size: .7rem
+    font-weight: 600
+    color: red
+    font-family: Arial, Helvetica, sans-serif
+    margin: 0!important
+    padding: 0rem .32rem
+    transition: .3s
+    box-sizing: border-box
+    display: none
 .listFileUp
-    margin-top: 1rem
-    border-top: 1px solid #00000020
-    border-bottom: 1px solid #00000020
+    margin: 0
     overflow: hidden
+    flex-basis: 100%
     >label
-        box-sizing: border-box
         width: 100%
         display: block
         padding: 0 0.5rem
@@ -27,10 +39,7 @@
                 cursor: pointer
         >*
             vertical-align: middle
-        &:nth-child(1)
-            margin-top: 1rem
         &:nth-last-child(1)
-            margin-bottom: 1rem
             border-bottom: none
 
             
